@@ -245,6 +245,16 @@ button {
     transform: scale(1.015);
   }
   
+  @media (hover: none) {
+    button:hover {
+      transform: none;
+    }
+    
+    button:active {
+      transform: scale(0.95);
+    }
+  }
+  
   button.lg {
     font-size: var(--font-3)!important;
     line-height: var(--line-height-title);
